@@ -1,10 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>会员注册</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="./css/registerMore.css">
 </head>
 <body>
 
+<div class="page-group">
+    <div class="page page-current">
+        <div class="register-form">
+            <label class="form-label" for="name"><span class="required">*</span>姓名</label>
+            <div>
+                <input type="text" id="name" class="form-item text-input">
+            </div>
+            <label class="form-label">性别</label>
+            <div>
+                <input type="button" name="sex" value="男" class="btn-input left-btn selected-btn"/>
+                <input type="button" name="sex" value="女" class="btn-input right-btn"/>
+            </div>
+            <label class="form-label" for="birthday">出生年月</label>
+            <div>
+                <input type="date" placeholder="请选择" id="birthday" class="form-item cancel-default">
+            </div>
+            <label class="form-label" for="education">学历</label>
+            <div>
+                <select id="education" class="form-item cancel-default">
+                    <option selected="selected" value="0">--请选择--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+
+            <div><a href="./registerMore.html">饮食习惯</a></div>
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
+<script type='text/javascript' src='./js/registerMore.js' charset='utf-8'></script>
 </body>
 </html>
