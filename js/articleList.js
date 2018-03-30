@@ -40,6 +40,7 @@ var getData = function (pageIndex) {
                     ko.mapping.fromJS(list, mappingList, alModel.artList);
                 }
 
+                
                 if (res.data.list.current_page == res.data.list.last_page) {
                     // 加载完毕，则注销无限加载事件，以防不必要的加载
                     $.detachInfiniteScroll($('.infinite-scroll'));
