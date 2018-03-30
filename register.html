@@ -18,11 +18,15 @@
         <div class="cover">
             <div class="center-box">
                 <div class="box-title">欢迎注册果蔬精粹日志</div>
-                <div class="box-label">手机号：</div>
-                <div class="box-input"><input type="text"></div>
-                <div class="box-label">邮箱：</div>
-                <div class="box-input"><input type="text"></div>
-                <div><a href="./registerMore.html">注册</a></div>
+                <div>
+                    <div class="box-label"><span class="required">*</span>手机号：</div>
+                    <div class="box-input"><input type="text" data-bind="value: phoneNumber"></div>
+                </div>
+                <div class="box-space">
+                    <div class="box-label">邮箱：</div>
+                    <div class="box-input"><input type="text" data-bind="value: email"></div>
+                </div>
+                <div><a data-bind="click:submit">注册</a></div>
             </div>
         </div>
     </div>
@@ -31,6 +35,7 @@
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script src="./dependency/knockout/knockout.validation.min.js"></script>
 <script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
 <script type='text/javascript' src='./js/register.js' charset='utf-8'></script>
 </body>

@@ -22,10 +22,15 @@
 }
 
 .center-box .box-input{
-     border: none;
-    width: 70%;
+     width: 70%;
+     margin: 0 auto;
 }
-
+.center-box .box-input input{
+    border: none;
+    border-bottom:1px solid #65b81b ;
+    width: 100%;
+    background:none;
+}
 
 .center-box .box-label {
     color: #65B81B;
@@ -37,7 +42,7 @@
 }
 
 .center-box a {
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     padding: 0.5rem 0;
     width: 70%;
@@ -48,4 +53,21 @@
     border-radius: 1rem;
     display: inline-block;
     box-shadow: 0px 1px 11px #888888;
+}
+.required{
+    color: red;
+    position: relative;
+    top:2px;
+}
+.box-space{
+    padding-top:1rem;
+}
+/*验证*/
+.validationMessage {
+    color: red !important;
+    font-size: 12px !important;
+    text-align: left;
+    display:  inline-block;
+    margin-top:  .5rem;
+    width: 100%;
 }
