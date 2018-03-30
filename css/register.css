@@ -1,5 +1,5 @@
 .page {
-    background: url(../image/fill_bg.png);
+    background: url(../image/register_bg.png);
     background-size: 100% 100%;
 }
 
@@ -15,23 +15,32 @@
     vertical-align: middle;
 }
 
-.center-box img {
-    width: 60%;
+.center-box .box-title {
+    color: #65B81B;
+    font-size: 20px;
+    margin-bottom: 1rem;;
 }
 
-.center-box .box-title {
-    width: 60%;
-    margin-top: 1.2rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
+.center-box .box-input{
+     border: none;
+    width: 70%;
+}
+
+
+.center-box .box-label {
+    color: #65B81B;
+    font-size: 18px;
+    margin: auto;
+    width: 70%;
+    text-align: left;
+    padding: .5rem 0;
 }
 
 .center-box a {
     margin-top: 3rem;
     margin-bottom: 2rem;
-    width: 70%;
     padding: 0.5rem 0;
+    width: 70%;
     text-align: center;
     background: #65B81B;
     color: #ffffff;
