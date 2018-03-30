@@ -50,7 +50,16 @@ CommonTools.getData = function (params) {
 };
 
 
-
+CommonTools.getLocation = function (params) {
+    $.ajax({
+        url: "./js/location.json",//json文件位置
+        type: "GET",//请求方式为get
+        dataType: "json", //返回数据格式为json
+        success: function (res) {//请求成功完成后要执行的方法
+            params.sCallback && params.sCallback(res);
+        }
+    })
+}
 
 
 
