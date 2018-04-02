@@ -1,4 +1,4 @@
-body{
+body {
     -webkit-overflow-scrolling: touch !important;
 }
 
@@ -37,7 +37,7 @@ body{
 }
 
 .register-form {
-    width: 70%;
+    width: 80%;
     display: inline-block;
     position: relative;
 }
@@ -48,10 +48,70 @@ body{
     font-size: 18px;
     margin: auto;
     text-align: left;
-    padding-top: .4rem;
-    padding-bottom: .1rem;
+    padding-top: 1rem;
+    padding-bottom: .4rem;
     display: block;
     clear: both;
+    line-height: 1rem;
+    position: relative;
+}
+
+.left-form-label {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute !important;
+    left: 0;
+}
+
+.right-form-label {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute !important;
+    left: 58%;
+}
+
+.left-form-btn {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 0;
+    height: 1.8rem;
+}
+
+.right-form-btn {
+    width: 42% !important;
+    margin: 0 !important;
+    position: absolute;
+    left: 58%;
+    height: 1.8rem;
+}
+
+.row1 {
+    top: 2.4rem;
+}
+
+.label-row1 {
+    top: 4.2rem;
+}
+
+.row2 {
+    top: 6.6rem;
+}
+
+.label-row2{
+    top: 8.4rem;
+}
+
+.row3 {
+    top: 10.8rem;
+}
+
+.label-row3{
+    top:12.6rem;
+}
+
+.row4 {
+    top: 15rem;
 }
 
 /*每个input元素*/
@@ -98,7 +158,7 @@ input[type="date"]:before {
     border: 1px solid #CCCCCC;
     float: left;
     background: #ffffff;
-    height: 2.2rem;
+    height: 100%;
 }
 
 .left-btn {
@@ -216,9 +276,9 @@ input[type="date"]:before {
     left: 52%;
 }
 
-.fixed-btn{
+.fixed-btn {
     height: 2.2rem;
-    margin: 2rem 0 ;
+    margin: 2rem 0;
     position: relative;
 }
 
