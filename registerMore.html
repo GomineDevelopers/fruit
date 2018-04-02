@@ -29,19 +29,53 @@
             </div>
             <label class="form-label" for="birthday">出生年月</label>
             <div>
-                <input type="date" id="birthday" class="form-item cancel-default ">
+                <input type="date" id="birthday" class="form-item cancel-default " placeholder="请选择"
+                       onfocus="this.removeAttribute('placeholder')">
             </div>
             <label class="form-label" for="education">学历</label>
             <div>
                 <div class="form-item select"
                      data-bind="event:{ click: setShow.bind($data, 'education') }, css:{'select-show':selectedShow()=='education'}">
                   <span id="education" class="placeholder">
-                      <span data-bind="visible:!selectedEducation()">请选择</span>
+                      <span data-bind="visible:!selectedEducation()" class="grey">请选择</span>
                       <span data-bind="text:selectedEducation"></span>
-                      <span class="icon icon-down"></span>
+                      <span class="icon icon-down" data-bind=" css:{'grey':!selectedEducation()}"></span>
                   </span>
                     <div data-bind="foreach: educationList" class="select-list">
-                        <span class="list-item" data-bind="text:$data,click:$parent.setEducation">本科 </span>
+                        <span class="list-item" data-bind="text:$data,click:$parent.setEducation"> </span>
+                    </div>
+                </div>
+            </div>
+            <label class="form-label" for="state">居住地</label>
+            <div class="small" style="height: 2.2rem">
+                <div class="form-item select col-30 left-select"
+                     data-bind="event:{ click: setShow.bind($data, 'state') }, css:{'select-show':selectedShow()=='state'}">
+                  <span id="state" class="placeholder">
+                      <span data-bind="css:{grey:!selectedState()},text:selectedState()? selectedState().name:'请选择'" class="select-name" ></span>
+                      <span class=" icon icon-down  " data-bind=" css:{'grey':!selectedState()}"></span>
+                    </span>
+                    <div data-bind="foreach: locationList" class="select-list">
+                        <span class="list-item" data-bind="text:name,click:$parent.setState"> </span>
+                    </div>
+                </div>
+                <div class="form-item select col-30 middle-select"
+                     data-bind="event:{ click: setShow.bind($data, 'city') }, css:{'select-show':selectedShow()=='city'&& selectedState().city }">
+                  <span id="city" class="placeholder">
+                      <span data-bind="css:{grey:!selectedCity()},text:selectedCity()? selectedCity().name:'请选择'"  class="select-name"></span>
+                      <span class="icon icon-down  " data-bind=" css:{'grey':!selectedCity()}"></span>
+                  </span>
+                    <div data-bind="foreach:selectedState().city" class="select-list">
+                        <span class="list-item" data-bind="text:name,click:$parent.setCity"> </span>
+                    </div>
+                </div>
+                <div class="form-item select col-30 right-select"
+                     data-bind="event:{ click: setShow.bind($data, 'region') }, css:{'select-show':selectedShow()=='region'&& selectedCity().area }">
+                  <span id="region" class="placeholder">
+                      <span data-bind="css:{grey:!selectedRegion()},text:selectedRegion()? selectedRegion():'请选择'"  class="select-name"></span>
+                      <span class="icon icon-down " data-bind=" css:{'grey':!selectedRegion()}"></span>
+                  </span>
+                    <div data-bind="foreach:selectedCity().area" class="select-list">
+                        <span class="list-item" data-bind="text:$data,click:$parent.setRegion"> </span>
                     </div>
                 </div>
             </div>
@@ -49,8 +83,54 @@
             <div>
                 <input type="text" id="address" class="form-item text-input">
             </div>
-
-
+            <label class="form-label" for="mobile">手机号码</label>
+            <div>
+                <input type="text" id="mobile" class="form-item text-input">
+            </div>
+            <label class="form-label" for="QQ">QQ号</label>
+            <div>
+                <input type="text" id="QQ" class="form-item text-input">
+            </div>
+            <label class="form-label" for="height">身高(CM)</label>
+            <div>
+                <input type="number" id="height" class="form-item text-input">
+            </div>
+            <label class="form-label" for="weight">体重(KG)</label>
+            <div>
+                <input type="number" id="weight" class="form-item text-input">
+            </div>
+            <label class="form-label" for="bloodType">血型</label>
+            <div>
+                <div class="form-item select"
+                     data-bind="event:{ click: setShow.bind($data, 'bloodType') }, css:{'select-show':selectedShow()=='bloodType'}">
+                  <span id="bloodType" class="placeholder">
+                      <span data-bind="visible:!selectedBloodType()" class="grey">请选择</span>
+                      <span data-bind="text:selectedBloodType"></span>
+                      <span class="icon icon-down" data-bind=" css:{'grey':!selectedBloodType()}"></span>
+                  </span>
+                    <div data-bind="foreach: bloodTypeList" class="select-list">
+                        <span class="list-item" data-bind="text:$data,click:$parent.setBloodType"> </span>
+                    </div>
+                </div>
+            </div>
+            <label class="form-label" for="dailyActivities">日常活动</label>
+            <div>
+                <input type="number" id="dailyActivities" class="form-item text-input">
+            </div>
+            <label class="form-label" for="exercise">运动频率(次/周)</label>
+            <div>
+                <div class="form-item select"
+                     data-bind="event:{ click: setShow.bind($data, 'exercise') }, css:{'select-show':selectedShow()=='exercise'}">
+                  <span id="exercise" class="placeholder">
+                      <span data-bind="visible:!selectedExercise()" class="grey">请选择</span>
+                      <span data-bind="text:selectedExercise"></span>
+                      <span class="icon icon-down" data-bind=" css:{'grey':!selectedExercise()}"></span>
+                  </span>
+                    <div data-bind="foreach: exerciseList" class="select-list">
+                        <span class="list-item" data-bind="text:$data,click:$parent.setExercise"> </span>
+                    </div>
+                </div>
+            </div>
             <div><a href="./registerMore.html">饮食习惯</a></div>
         </div>
     </div>
