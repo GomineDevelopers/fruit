@@ -22,21 +22,34 @@
             </div>
             <label class="form-label">性别</label>
             <div>
-                <input type="button" name="sex" value="男" class="btn-input left-btn selected-btn"/>
-                <input type="button" name="sex" value="女" class="btn-input right-btn"/>
+                <input type="button" name="sex" value="男" class="btn-input left-btn "
+                       data-bind="event:{ click: setSex.bind($data, 'male') },css:{'selected-btn':selectedSex()=='male'}"/>
+                <input type="button" name="sex" value="女" class="btn-input right-btn"
+                       data-bind="event:{ click: setSex.bind($data, 'female') },css:{'selected-btn':selectedSex()=='female'}"/>
             </div>
             <label class="form-label" for="birthday">出生年月</label>
             <div>
-                <input type="date" placeholder="请选择" id="birthday" class="form-item cancel-default">
+                <input type="date" id="birthday" class="form-item cancel-default ">
             </div>
             <label class="form-label" for="education">学历</label>
             <div>
-                <select id="education" class="form-item cancel-default">
-                    <option selected="selected" value="0">--请选择--</option>
-                    <option>Male</option>
-                    <option>Female</option>
-                </select>
+                <div class="form-item select"
+                     data-bind="event:{ click: setShow.bind($data, 'education') }, css:{'select-show':selectedShow()=='education'}">
+                  <span id="education" class="placeholder">
+                      <span data-bind="visible:!selectedEducation()">请选择</span>
+                      <span data-bind="text:selectedEducation"></span>
+                      <span class="icon icon-down"></span>
+                  </span>
+                    <div data-bind="foreach: educationList" class="select-list">
+                        <span class="list-item" data-bind="text:$data,click:$parent.setEducation">本科 </span>
+                    </div>
+                </div>
             </div>
+            <label class="form-label" for="address">详细地址</label>
+            <div>
+                <input type="text" id="address" class="form-item text-input">
+            </div>
+
 
             <div><a href="./registerMore.html">饮食习惯</a></div>
         </div>
