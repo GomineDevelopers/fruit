@@ -1,3 +1,7 @@
+body{
+    -webkit-overflow-scrolling: touch !important;
+}
+
 .self-page {
     background: url(../image/register_bg.png);
     background-size: 100% 100%;
@@ -5,7 +9,7 @@
     display: block;
     height: 100%;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    overflow-x: hidden;
 }
 
 .required {
@@ -133,7 +137,6 @@ input[type="date"]:before {
     height: auto !important;
     z-index: 1;
     position: absolute;
-    overflow: hidden;
     margin-bottom: 1rem;
 }
 
@@ -213,9 +216,14 @@ input[type="date"]:before {
     left: 52%;
 }
 
+.fixed-btn{
+    height: 2.2rem;
+    margin: 2rem 0 ;
+    position: relative;
+}
+
 .register-form a {
     width: 100%;
-    margin: 2rem 0 ;
     padding: 0.5rem 0;
     text-align: center;
     background: #65B81B;

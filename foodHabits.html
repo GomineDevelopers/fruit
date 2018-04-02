@@ -81,7 +81,8 @@
                       <span class="icon icon-down" data-bind=" css:{'grey':!selectedEatingOut()}"></span>
                   </span>
                 <div data-bind="foreach: eatingOutList" class="select-list">
-                    <span class="list-item" data-bind="text:$data,click:$parent.setItem.bind($data,'eatingOut',$data)"> </span>
+                    <span class="list-item"
+                          data-bind="text:$data,click:$parent.setItem.bind($data,'eatingOut',$data)"> </span>
                 </div>
             </div>
         </div>
@@ -93,7 +94,9 @@
         <div>
             <textarea rows="3" data-bind="value: illness" id="improve" class="form-area"></textarea>
         </div>
-        <div><a href="#">提交</a></div>
+        <div class="fixed-btn">
+            <a href="#">提交</a>
+        </div>
     </div>
 </div>
 
