@@ -12,7 +12,7 @@
     color: red !important;
 }
 
-.fixed-height{
+.fixed-height {
     height: 2.2rem;
 }
 
@@ -59,6 +59,16 @@
     border: 1px solid #CCCCCC;
     border-radius: .3rem;
     line-height: 1.6rem;
+    background: #ffffff;
+}
+
+/*textarea*/
+.register-form .form-area {
+    width: 100%;
+    color: #3b6812;
+    padding: .3rem;
+    border: 1px solid #CCCCCC;
+    border-radius: .3rem;
     background: #ffffff;
 }
 
@@ -114,7 +124,6 @@ input[type="date"]:before {
     text-overflow: ellipsis;
     display: inline-block;
 }
-
 
 .register-form .icon-down {
     float: right;
@@ -192,8 +201,7 @@ input[type="date"]:before {
 /*最下面的按钮*/
 .register-form a {
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0 ;
     padding: 0.5rem 0;
     text-align: center;
     background: #65B81B;
