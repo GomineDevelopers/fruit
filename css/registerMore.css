@@ -1,16 +1,19 @@
-.page {
+.self-page {
     background: url(../image/register_bg.png);
     background-size: 100% 100%;
     text-align: center;
-}
-
-.page.page-current {
-    overflow-x: hidden;
+    display: block;
+    height: 100%;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .required {
     color: red !important;
+}
+
+.fixed-height{
+    height: 2.2rem;
 }
 
 /*验证*/
@@ -122,6 +125,7 @@ input[type="date"]:before {
     z-index: 1;
     position: absolute;
     overflow: hidden;
+    margin-bottom: 1rem;
 }
 
 .register-form .select-list {
