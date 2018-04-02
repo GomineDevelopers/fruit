@@ -4,7 +4,7 @@ var registerMoreModel = function () {
     self.selectedEducation = ko.observable("");
     self.bloodTypeList = ['A型', 'B型', 'O型', 'AB型'];
     self.selectedBloodType = ko.observable("");
-    self.exerciseList = ['1', '2', '3', '4', '5', '6', '7'];
+    self.exerciseList = ['0', '1', '2-3', '4-6', '7及以上'];
     self.selectedExercise = ko.observable("");
     self.selectedSex = ko.observable("male");
     self.locationList = [];
@@ -22,10 +22,10 @@ var registerMoreModel = function () {
        pattern:{params:'[1-9][0-9]{4,14}',message:'请输入合法的QQ号码，不能以“0”开头的5-15位数字'}
     });
     self.height = ko.observable().extend({
-        pattern:{params:'^[0-9]+(.[0-9]{1,2})?$',message:'最多2位小数'}
+        pattern:{params:'^([0-9]*[1-9][0-9]*)+([.]{1}[0-9]{1,2})?$',message:'最多2位小数'}
     });
     self.weight = ko.observable().extend({
-        pattern:{params:'^[0-9]+(.[0-9]{1,2})?$',message:'最多2位小数'}
+        pattern:{params:'^([0-9]*[1-9][0-9]*)+([.]{1}[0-9]{1,2})?$',message:'最多2位小数'}
     });
     self.address = ko.observable("");
     self.dailyActivities = ko.observable("");
@@ -114,11 +114,11 @@ var registerMoreModel = function () {
                 }
             };
             console.info(params);
+            window.location.href="./foodHabits.html";
         } else {
             rmModel.errors.showAllMessages();
         }
     };
-
 }
 
 var rmModel = new registerMoreModel();

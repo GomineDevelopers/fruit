@@ -17,8 +17,8 @@
       <file leaf-file-name="registerMore.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/registerMore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-133">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="667">
+              <caret line="116" column="46" lean-forward="false" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -27,8 +27,8 @@
       <file leaf-file-name="foodHabits.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foodHabits.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+            <state relative-caret-position="559">
+              <caret line="95" column="37" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -37,36 +37,30 @@
       <file leaf-file-name="foodHabits.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/foodHabits.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-524">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
+            <state relative-caret-position="190">
+              <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registerMore.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="registerMore.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/registerMore.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="136" column="57" lean-forward="true" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="57" />
+            <state relative-caret-position="591">
+              <caret line="138" column="63" lean-forward="false" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registerMore.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registerMore.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/registerMore.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
-              <caret line="203" column="13" lean-forward="false" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+              <caret line="212" column="12" lean-forward="false" selection-start-line="212" selection-start-column="12" selection-end-line="212" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -105,11 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>placeholder</find>
-      <find>详细</find>
-      <find>location</find>
-      <find>set</find>
-      <find>educa</find>
       <find>text:selectedState</find>
       <find>selectedState</find>
       <find>-show</find>
@@ -131,10 +120,15 @@
       <find>selectedShow</find>
       <find>form-item</find>
       <find>setEatingOut</find>
-      <find>setShow</find>
       <find>&lt;div class=&quot;form-item select&quot;</find>
+      <find>.register-form a</find>
       <find>illness</find>
+      <find>setShow</find>
+      <find>sub</find>
+      <find>number</find>
+      <find>['0', '1', '2-3', '4-6', '7及以上'];</find>
       <find>selectedEatingOut</find>
+      <find>col-</find>
     </findStrings>
     <dirStrings>
       <dir>F:\fruit</dir>
@@ -168,12 +162,12 @@
         <option value="$PROJECT_DIR$/css/contact.css" />
         <option value="$PROJECT_DIR$/fillInfo.html" />
         <option value="$PROJECT_DIR$/register.html" />
-        <option value="$PROJECT_DIR$/registerMore.html" />
-        <option value="$PROJECT_DIR$/js/registerMore.js" />
         <option value="$PROJECT_DIR$/js/foodHabITS.js" />
         <option value="$PROJECT_DIR$/js/foodHabits.js" />
         <option value="$PROJECT_DIR$/foodHabits.html" />
+        <option value="$PROJECT_DIR$/js/registerMore.js" />
         <option value="$PROJECT_DIR$/css/registerMore.css" />
+        <option value="$PROJECT_DIR$/registerMore.html" />
       </list>
     </option>
   </component>
@@ -304,12 +298,12 @@
       <workItem from="1522285574500" duration="4187000" />
       <workItem from="1522306628127" duration="1690000" />
       <workItem from="1522373800787" duration="22283000" />
-      <workItem from="1522631625018" duration="15559000" />
+      <workItem from="1522631625018" duration="17280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76473000" />
+    <option name="totallyTimeSpent" value="78194000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -481,6 +475,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -642,40 +637,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/registerMore.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="667">
+          <caret line="116" column="46" lean-forward="false" selection-start-line="116" selection-start-column="46" selection-end-line="116" selection-end-column="46" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/registerMore.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="136" column="57" lean-forward="true" selection-start-line="136" selection-start-column="6" selection-end-line="136" selection-end-column="57" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#span#0;n#div#0;n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#10;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/foodHabits.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-524">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="190">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/foodHabits.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="95" column="23" lean-forward="false" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+        <state relative-caret-position="559">
+          <caret line="95" column="37" lean-forward="true" selection-start-line="95" selection-start-column="7" selection-end-line="95" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -683,8 +662,18 @@
     <entry file="file://$PROJECT_DIR$/css/registerMore.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
-          <caret line="203" column="13" lean-forward="false" selection-start-line="203" selection-start-column="13" selection-end-line="203" selection-end-column="13" />
+          <caret line="212" column="12" lean-forward="false" selection-start-line="212" selection-start-column="12" selection-end-line="212" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/registerMore.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="138" column="63" lean-forward="false" selection-start-line="138" selection-start-column="63" selection-end-line="138" selection-end-column="63" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

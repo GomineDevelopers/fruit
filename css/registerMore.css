@@ -199,6 +199,20 @@ input[type="date"]:before {
 }
 
 /*最下面的按钮*/
+
+.col-50 {
+    width: 48% !important;
+    position: absolute;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    left: 52%;
+}
+
 .register-form a {
     width: 100%;
     margin: 2rem 0 ;

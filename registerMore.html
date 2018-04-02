@@ -96,11 +96,11 @@
         </div>
         <label class="form-label" for="height">身高(CM)</label>
         <div>
-            <input type="number" id="height" class="form-item text-input" data-bind="value:height">
+            <input type="text" id="height" class="form-item text-input" data-bind="value:height">
         </div>
         <label class="form-label" for="weight">体重(KG)</label>
         <div>
-            <input type="number" id="weight" class="form-item text-input" data-bind="value:weight">
+            <input type="text" id="weight" class="form-item text-input" data-bind="value:weight">
         </div>
         <label class="form-label" for="bloodType">血型</label>
         <div class="fixed-height">
@@ -118,7 +118,7 @@
         </div>
         <label class="form-label" for="dailyActivities">日常活动</label>
         <div>
-            <input type="number" id="dailyActivities" class="form-item text-input" data-bind="value:dailyActivities">
+            <input type="text" id="dailyActivities" class="form-item text-input" data-bind="value:dailyActivities">
         </div>
         <label class="form-label" for="exercise">运动频率(次/周)</label>
         <div class="fixed-height">
@@ -134,8 +134,10 @@
                 </div>
             </div>
         </div>
-       <!-- <div><a href="./registerMore.html">饮食习惯</a></div>-->
-        <div><a data-bind="click:submit">饮食习惯</a></div>
+        <div>
+            <a   class="col-50 left-btn">跳过</a>
+            <a data-bind="click:submit" class="col-50 right-btn">饮食习惯</a>
+        </div>
     </div>
 </div>
 
