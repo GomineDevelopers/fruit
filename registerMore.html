@@ -18,7 +18,7 @@
     <div class="register-form">
         <label class="form-label" for="name"><span class="required">*</span>姓名</label>
         <div>
-            <input type="text" id="name" class="form-item text-input">
+            <input type="text" id="name" class="form-item text-input" data-bind="value:name">
         </div>
         <label class="form-label">性别</label>
         <div>
@@ -30,7 +30,7 @@
         <label class="form-label" for="birthday">出生年月</label>
         <div>
             <input type="date" id="birthday" class="form-item cancel-default " placeholder="请选择"
-                   onfocus="this.removeAttribute('placeholder')">
+                   onfocus="this.removeAttribute('placeholder')" data-bind="value:birthday">
         </div>
         <label class="form-label" for="education">学历</label>
         <div class="fixed-height">
@@ -84,23 +84,23 @@
         </div>
         <label class="form-label" for="address">详细地址</label>
         <div>
-            <input type="text" id="address" class="form-item text-input">
+            <input type="text" id="address" class="form-item text-input" data-bind="value:address">
         </div>
         <label class="form-label" for="mobile">手机号码</label>
         <div>
-            <input type="text" id="mobile" class="form-item text-input">
+            <input type="text" id="mobile" class="form-item text-input" data-bind="value:mobile">
         </div>
         <label class="form-label" for="QQ">QQ号</label>
         <div>
-            <input type="text" id="QQ" class="form-item text-input">
+            <input type="text" id="QQ" class="form-item text-input" data-bind="value:QQ">
         </div>
         <label class="form-label" for="height">身高(CM)</label>
         <div>
-            <input type="number" id="height" class="form-item text-input">
+            <input type="number" id="height" class="form-item text-input" data-bind="value:height">
         </div>
         <label class="form-label" for="weight">体重(KG)</label>
         <div>
-            <input type="number" id="weight" class="form-item text-input">
+            <input type="number" id="weight" class="form-item text-input" data-bind="value:weight">
         </div>
         <label class="form-label" for="bloodType">血型</label>
         <div class="fixed-height">
@@ -118,7 +118,7 @@
         </div>
         <label class="form-label" for="dailyActivities">日常活动</label>
         <div>
-            <input type="number" id="dailyActivities" class="form-item text-input">
+            <input type="number" id="dailyActivities" class="form-item text-input" data-bind="value:dailyActivities">
         </div>
         <label class="form-label" for="exercise">运动频率(次/周)</label>
         <div class="fixed-height">
@@ -134,7 +134,8 @@
                 </div>
             </div>
         </div>
-        <div><a href="./registerMore.html">饮食习惯</a></div>
+       <!-- <div><a href="./registerMore.html">饮食习惯</a></div>-->
+        <div><a data-bind="click:submit">饮食习惯</a></div>
     </div>
 </div>
 
@@ -142,6 +143,7 @@
 <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
 <script src="./dependency/knockout/knockout-3.4.2.js"></script>
+<script src="./dependency/knockout/knockout.validation.min.js"></script>
 <script type='text/javascript' src='./js/common.js' charset='utf-8'></script>
 <script type='text/javascript' src='./js/registerMore.js' charset='utf-8'></script>
 </body>
